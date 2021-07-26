@@ -1,0 +1,142 @@
+
+.container {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.tabBox {
+  padding: 1.8em 18em 0.2em;
+  border-bottom: 1px solid #2264A8;
+
+  .tabCtx {
+    width: 18em;
+    // padding-right: 1em;
+  }
+
+  .leftTab {
+    width: 20em;
+    height: 5em;
+    background: url('../../../assets/images/home/letTab.png');
+    background-size: cover;
+  }
+
+  .rightTab {
+    width: 20em;
+    height: 5em;
+    background: url('../../../assets/images/home/rightTab.png');
+    background-size: cover;
+  }
+
+  .tabItem {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.8em;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #6AAEF5;
+    padding: 0.55em 0.65em;
+    // line-height: 60px;
+  }
+  .active {
+    color: #fff;
+  }
+}
+
+// .title {
+//   padding: 1em 0;
+
+//   .text {
+//     font-size: 2.1em;
+//     font-family: Microsoft YaHei;
+//     font-weight: bold;
+//     color: #2264A8;
+//     text-align: center;
+//   }
+// }
+
+.line{
+  height: 0.1em;
+  background: url('../../../assets/images/home/detailLine.png');
+}
+
+.main {
+  padding: 0 18em ;
+
+  .newsItem {
+    cursor: pointer;
+    padding: 2.1em;
+    display: flex;
+    border-bottom:0.02em solid #E5E5E5 ;
+
+    .mainpic {
+      height: 11.5em;
+      width: 17.5em;
+    }
+    .right {
+      margin-left: 1.5em;
+      position: relative;
+
+      .title {
+        font-size: 1.1em;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        color: #2264A8;
+      }
+
+      .concent {
+        height: 6em;
+        color: #4B4B4B;
+        font-size: 0.9em;
+        margin: 1.5em 0 2em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        text-overflow : ellipsis;
+      }
+      .time {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        .olock {
+          height: 1.4em;
+          width: 1.4em;
+          margin-right: 0.4em;
+        }
+        span {
+          display: inline-block;
+          color: #4B4B4B;
+          font-size: 0.9em;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .firstItem {
+    .mainpic {
+      height: 20em;
+      width: 34em;
+    }
+
+    .right .concent {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 11;
+      overflow: hidden;
+      text-overflow : ellipsis;
+      height: 13.5em;
+    }
+
+  }
+  // line-height: 25px;
+}
+
+.pageChage {
+  height: 10em;
+  box-sizing: border-box;
+  padding-top: 3.5em;
+  text-align: center;
+}
